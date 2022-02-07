@@ -17,9 +17,9 @@ def generate(source: str, adj: list, verbs: list, adverbs: list,
             '%pn': pronouns,
             '%pl': places
         }
-        for string, category in matches.items:
+        for string, category in matches.items():
             if string in word:
                 word = word.replace(string, category.pop())
 
-        output = output + word
+        output = output + word + " "
     return output
