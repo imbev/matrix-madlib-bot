@@ -7,7 +7,7 @@ def generate(source: str, adj: list, verbs: list, adverbs: list,
     for category in [adj, verbs, adverbs, nouns, pronouns, places]:
         category = random.shuffle(category)
 
-    output: str = ""
+    words_list: list =  []
     for word in source.split():
         matches = {
             '%aj': adj,
@@ -21,5 +21,6 @@ def generate(source: str, adj: list, verbs: list, adverbs: list,
             if string in word:
                 word = word.replace(string, category.pop())
 
-        output = output + word + " "
-    return output
+        words_list.append(word)
+
+    return " ".join(words_list)
