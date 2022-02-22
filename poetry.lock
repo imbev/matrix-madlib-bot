@@ -295,6 +295,17 @@ python-versions = ">=3.6"
 cryptography = "*"
 
 [[package]]
+name = "python-dotenv"
+version = "0.19.2"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "python-socks"
 version = "2.0.3"
 description = "Core proxy (SOCKS4, SOCKS5, HTTP tunneling) functionality for Python"
@@ -365,7 +376,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "c36ac72f0241bfb96e5faf8d1d3ef02e3a2621b3c448c7df0196b060bf989014"
+content-hash = "b711b1f2750dcb5f265bb8fbd3f0c7bdc8c1aea199af09a6cec116b1afc49dfc"
 
 [metadata.files]
 aiofiles = [
@@ -807,6 +818,10 @@ pyrsistent = [
 python-cryptography-fernet-wrapper = [
     {file = "python-cryptography-fernet-wrapper-1.0.4.tar.gz", hash = "sha256:74f118afad763ceb1c1eaaba6b06e19cc35e5cffb4008e7154675171fa116a92"},
     {file = "python_cryptography_fernet_wrapper-1.0.4-py3-none-any.whl", hash = "sha256:0cc7d536fedec01e12bc6d4f0cf9772d102d4db9786f10108ed90e519151e9b6"},
+]
+python-dotenv = [
+    {file = "python-dotenv-0.19.2.tar.gz", hash = "sha256:a5de49a31e953b45ff2d2fd434bbc2670e8db5273606c1e737cc6b93eff3655f"},
+    {file = "python_dotenv-0.19.2-py2.py3-none-any.whl", hash = "sha256:32b2bdc1873fd3a3c346da1c6db83d0053c3c62f28f1f38516070c4c8971b1d3"},
 ]
 python-socks = [
     {file = "python-socks-2.0.3.tar.gz", hash = "sha256:e3a9ca8e554733862ce4d8ce1d10efb480fd3a3acdafd03393943ec00c98ba8a"},
