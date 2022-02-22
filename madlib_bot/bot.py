@@ -2,8 +2,8 @@ import simplematrixbotlib as botlib
 
 
 async def help_message(room, event, bot):
-    match = botlib.MessageMatch(room, event, bot)
-    if not match.command("help"):
+    match = botlib.MessageMatch(room, event, bot, bot.prefix)
+    if not (match.command("help") and match.prefix()):
         return
 
     message = "# Matrix Madlib Bot\n"+(

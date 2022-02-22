@@ -10,7 +10,7 @@ def main():
     USERNAME = os.environ.get('BOT_USERNAME')
     PASSWORD = os.environ.get('PASSWORD')
     TOKEN = os.environ.get('TOKEN')
-    PREFIX = os.environ.get('PREFIX')
+    PREFIX = os.environ.get('PREFIX', 'ml!')
 
     creds = botlib.Creds(
         HOMESERVER, USERNAME, password=PASSWORD, access_token=TOKEN)
